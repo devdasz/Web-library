@@ -8,7 +8,7 @@
 </head>
 
 <body class>
-    <div class=" px-3 py-4">
+    <div class="px-3 py-4 ">
         <h1 class="text-3xl font-bold underline">
             Web UI Library using Tailwind
         </h1>
@@ -16,25 +16,24 @@
         <!-- Login page with subtle amination -->
         <section>
 
-            <h2 class="text-xl font-bold mb-3">
+            <h2 class="mb-3 text-xl font-bold">
                 Login page with subtle amination
             </h2>
-            <div class="bg-gray-50 min-h-screen  flex
-            items-center justify-center md:px-16">
+            <div class="flex items-center justify-center min-h-screen bg-gray-50 md:px-16">
                 <div class="relative w-full max-w-lg">
                     <div
-                        class="absolute top-0 -left-4 w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob">
+                        class="absolute top-0 bg-purple-300 rounded-full -left-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-60 animate-blob">
                     </div>
                     <div
-                        class="absolute top-0 -right-4 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-2000">
+                        class="absolute top-0 bg-yellow-300 rounded-full -right-4 w-72 h-72 mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-2000">
                     </div>
                     <div
-                        class="absolute -bottom-8 left-20 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-4000">
+                        class="absolute bg-pink-300 rounded-full -bottom-8 left-20 w-72 h-72 mix-blend-multiply filter blur-xl opacity-60 animate-blob animation-delay-4000">
                     </div>
-                    <div class="m-8 relative space-y-4 ">
+                    <div class="relative m-8 space-y-4 ">
 
                         <div
-                            class="p-5 bg-white border border-gray-100 rounded-lg flex-col items-center justify-between space-y-8">
+                            class="flex-col items-center justify-between p-5 space-y-8 bg-white border border-gray-100 rounded-lg">
                             <div class="flex items-center mb-6 text-2xl font-semibold text-gray-900 dark:text-white">
 
                                 Visa Process
@@ -67,7 +66,7 @@
         </section>
         <!-- Modal -->
         <section>
-            <h2 class="text-xl font-bold mb-3">
+            <h2 class="mb-3 text-xl font-bold">
                 Add Country Modal
             </h2>
             <!-- Main modal -->
@@ -91,7 +90,7 @@
                                 <div>
                                     <label for="email"
                                         class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Name</label>
-                                    <input type="text" name="country" 
+                                    <input type="text" name="country"
                                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                         placeholder="Country name" required>
                                 </div>
@@ -107,7 +106,105 @@
             </div>
             <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
         </section>
+        <!-- Table -->
+        <section>
 
+            <div class="relative overflow-x-auto">
+                <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+                    <thead class="text-xs text-gray-700 uppercase bg-[#F1F2F6] dark:bg-gray-700 dark:text-gray-400">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 last:text-end">
+                                Product name
+                            </th>
+                            <th scope="col" class="px-6 py-3 last:text-end">
+                                Color
+                            </th>
+                            <th scope="col" class="px-6 py-3 last:text-end">
+                                Category
+                            </th>
+                            <th scope="col" class="px-6 py-3 last:text-end">
+                                Price
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Apple MacBook Pro 17"
+                            </th>
+                            <td class="px-6 py-4 last:text-end">
+                                Silver
+                            </td>
+                            <td class="px-6 py-4 last:text-end">
+                                Laptop
+                            </td>
+                            <td class="px-6 py-4 last:text-end">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Apple MacBook Pro 17"
+                            </th>
+                            <td class="px-6 py-4 last:text-end">
+                                Silver
+                            </td>
+                            <td class="px-6 py-4 last:text-end">
+                                Laptop
+                            </td>
+                            <td class="px-6 py-4 last:text-end">
+                                $2999
+                            </td>
+                        </tr>
+                        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                            <th scope="row"
+                                class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                Apple MacBook Pro 17"
+                            </th>
+                            <td class="px-6 py-4 last:text-end">
+                                Silver
+                            </td>
+                            <td class="px-6 py-4 last:text-end">
+                                Laptop
+                            </td>
+                            <td class="px-6 py-4 last:text-end">
+                                $2999
+                            </td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+            </div>
+            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+        </section>
+        <!-- Chat app UI Landing page -->
+        <section>
+        <div class="flex flex-col w-full h-screen bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900">
+            <div class="flex flex-col flex-grow w-full text-center ">
+                <div class="flex items-center flex-grow">
+                    <img class="mx-auto my-auto h-72" src="./src/assets/aiPic.png" alt="">
+                </div>
+            
+                <h2 class="mx-3 mb-3 text-4xl font-light text-gray-900 md:text-5xl md:mb-5">Your Inteligence Companion</h2>
+                <p class="mx-3 text-sm text-gray-500 md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim v</p>
+            </div>
+
+            <div class="w-full text-center">
+                <button type="button" class="text-white bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 shadow-lg shadow-teal-500/50 dark:shadow-lg dark:shadow-teal-800/80 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 my-8 md:my-12 ">Start Chat</button>
+            </div>
+        </div>
+        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+        </section>
+        <!-- Chat app UI Chating page -->
+        <section>
+<div class="h-screen bg-[conic-gradient(at_bottom_left,_var(--tw-gradient-stops))] from-indigo-200 via-slate-600 to-gray-200">
+
+</div>
+        </section>
     </div>
 
 </body>
